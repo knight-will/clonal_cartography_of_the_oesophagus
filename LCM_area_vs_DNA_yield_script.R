@@ -10,6 +10,6 @@ head(lcmb_dataset)
 #Plot
 ggplot(lcmb_dataset, aes(`Area (um^2)`, `Yield ng/ul`)) +
   geom_point() +
-  geom_smooth(method = lm) +
   ggtitle("Investigating the area cut for LCMB against the amount of DNA extracted") +
-  xlim(0,400000)
+  xlim(0,200000) +
+  ylim(0,100)
